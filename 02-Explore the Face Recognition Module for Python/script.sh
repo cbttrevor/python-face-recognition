@@ -6,7 +6,7 @@ apt update && apt install python3-pip cmake --yes
 pip3 search face
 
 # Install the face-recognition module from PyPi
-pip3 install face-recognition
+pip3 install face-recognition opencv-python
 
 # Run the command line utility
 face_recognition --help
