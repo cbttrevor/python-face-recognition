@@ -18,6 +18,6 @@ def detect_faces():
     
     # Load the image from the filesystem and detect faces
     img = load_image_file(temp_file_name)
-    return 'We found {0} faces'.format(len(face_locations(img)))
+    return 'We found {0} faces'.format(len(face_locations(img, model='cnn')))
 
 app.run(port=3001)

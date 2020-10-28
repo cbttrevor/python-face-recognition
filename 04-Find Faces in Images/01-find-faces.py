@@ -1,16 +1,16 @@
 from os.path import realpath, dirname
-import glob
+from glob import glob
 import face_recognition
-import numpy
 import cv2
 from functools import reduce
 
 # Find the script's current directory
 script_dir = realpath(dirname(__file__))
 assets_dir = '{0}/assets'.format(dirname(script_dir))
+print(assets_dir)
 
 # Find all files with .jpg file extension in the ../assets/ directory
-file_list = glob.glob('{0}/*.jpg'.format(assets_dir))
+file_list = glob('{0}/*.jpg'.format(assets_dir))
 
 # Print out the list of files
 print(file_list)

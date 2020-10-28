@@ -8,5 +8,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-RUN apt update && apt upgrade --yes && apt-get install cmake python3-pip --yes && pip3 install flask pylint requests opencv-python face-recognition
+RUN apt update && apt upgrade --yes && apt-get install libgtk2.0-dev cmake python3-pip libgl-dev --yes && pip3 install flask pylint requests opencv-python face-recognition
 
